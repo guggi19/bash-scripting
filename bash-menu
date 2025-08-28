@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# === Hauptmenü ===
+main_menu() {
+    clear
+    echo "=== Hauptmenü ==="
+    echo "1) Systeminformationen"
+    echo "0) Beenden"
+    echo
+    read -p "Auswahl eingeben: " choice
+
+    case $choice in
+        1) system_info ;;
+        0) echo "Programm beendet."; exit 0 ;;
+        *) echo "Ungültige Eingabe!"; sleep 1; main_menu ;;
+    esac
+}
+
+# === Systeminformationen ===
+system_info() {
+    clear
+    echo "=== Systeminformationen ==="
+    echo "Hostname: $(hostname)"
+    echo "Uptime: $(uptime -p)"
+    echo "Freier Speicher:"
+    free -h
+    echo
+    read -p "Drücke [Enter] um zurückzukehren..."
+    main_menu
+}
+
+# === Start ===
+main_menu
