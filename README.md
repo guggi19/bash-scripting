@@ -2,7 +2,7 @@
 
 ## Zielbeschreibung
 Dieses Projekt ist ein Bash-Skript, das verschiedene Systemaufgaben automatisiert.  
-Es ermöglicht eine schnelle Analyse von Systemressourcen, Netzwerkinformationen, Backups, Logsuche und weitere nützliche Funktionen – alles über ein interaktives Menü.
+Es ermöglicht eine Analyse von Systemressourcen, Netzwerkinformationen, Backups, Logsuche und weitere Funktionen über ein Menü.
 
 ---
 
@@ -28,14 +28,8 @@ sudo apt install figlet curl
 ## Installation
 1. Repository klonen:
    ```bash
-   git clone <REPO_URL>
+   git clone <https://github.com/guggi19/bash-scripting.git>
    cd bash-project
-
-# System Toolkit – Nutzung
-
-## Ziel
-Dieses Bash-Skript bietet ein Menü mit verschiedenen Automatisierungs- und Analysefunktionen für Linux-Systeme.  
-Es erleichtert die tägliche Arbeit mit Systeminformationen, Backups, Logsuche und mehr.
 
 ---
 
